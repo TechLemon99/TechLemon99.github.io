@@ -1,214 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crime Fiction</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LemonWeb 3.0</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Crime Fiction</h1>
-            <nav>
-                <ul>
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#history">History</a></li>
-                    <li><a href="#core-elements">Core Elements</a></li>
-                    <li><a href="#subgenres">Subgenres</a></li>
-                    <li><a href="#archetypes">Archetypes</a></li>
-                    <li><a href="#impact">Cultural Impact</a></li>
-                    <li><a href="#famous-authors">Famous Authors</a></li>
-                    <li><a href="#recommendations">Recommendations</a></li>
-                </ul>
-            </nav>
+    <meta name="description" content="Lemon, 16-year-old programming and gaming enthusiast.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="avatar">🇨🇳</div>
+          <div class="brand-text">
+            <h1 class="title">Lemon</h1>
+            <p class="subtitle">16 • Programming and Gaming Enthusiast • High School Student</p>
+          </div>
         </div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </nav>
+      </div>
     </header>
 
-    <!-- Main Content Section -->
     <main>
+        <section class = "descelements">
+            <div id = "desc">
+                <h1 class="white-shadow default-glow">Hey, I'm Lemon.</h1>
+                <p class="white-shadow default-glow">I'm <span class = "auto-type"></span></p>
+                </div>
 
-        <!-- OVERVIEW -->
-        <section id="overview" class="section">
-            <h2>What is Crime Fiction?</h2>
-            <p>
-                Crime fiction is a literary genre centered on criminal acts, investigations, motives, 
-                and the search for truth. At its core, crime fiction places a mystery or other forms of 
-                wrongdoings at the heart of the narrative. Readers follow detectives, law enforcement, 
-                private investigators, journalists, or ordinary individuals who are drawn into the case.
-            </p>
-            <p>
-                Most contemporary crime fiction stories nowadays are often associated with murders and high-stakes 
-                investigations, but these stories are not limited and can explore a wide spectrum of crimes, from 
-                theft and fraud to conspiracies and forms of psychological manipulation. The tension usually comes 
-                from uncovering hidden truths, navigating clues and red herrings, and understanding what drives people to break the law.
-            </p>
-            <p>
-                Crime fiction is also deeply psychological, as they often go into the depths of examining human nature, 
-                morality, justice, and the darker aspects of society. Whether gritty and realistic or light and puzzle-driven, 
-                the genre continues to evolve while remaining one of the most widely read categories in literature.
-            </p>
-            <img src="img/hd.jpg" alt="Crime Fiction Image">
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+            <script>
+                var typed = new Typed(".auto-type",{
+                    strings: ["a Programmer", "a Creator", "an AI/ML Enthusiast"],
+                    typeSpeed: 150,
+                    backSpeed: 150,
+                    loop: true
+                })
+            </script>
+
+            <div id = "descimg">
+                <img src="img/tuffsick.jpg" alt="Me I guess">
+            </div>
+
+            <div id = "shortdesc">
+                <h2 class="white-shadow default-glow">I like to make things.</h2>
+            </div>
         </section>
 
-        <!-- HISTORY -->
-        <section id="history" class="section">
-            <h2>History of Crime Fiction</h2>
+      <section id="about" class="section">
+        <div class="container">
+          <h3 class="section-title">About</h3>
+          <div class="card">
+            <p>I'm Lemon, a high school student who codes for fun. I like JavaScript and Python, and I'm learning more about web development and game mechanics.</p>
+            <p>When I'm not online I'm probably either sleeping or I'm dead</p>
+          </div>
+        </div>
+      </section>
 
-            <p>
-                The history of crime fiction spans nearly two centuries, evolving from early detective tales 
-                into a broad and diverse genre. Even without visual timelines, the development of crime fiction 
-                can be understood through its major eras and influential works.
-            </p>
+      <section id="projects" class="section">
+        <div class="container">
+          <h3 class="section-title">Projects</h3>
+          <div class="grid">
+            <article class="card">
+              <h4 class="card-title">Epic Block Run</h4>
+              <p>Ripoff Geometry Dash made in Unity with C#</p>
+              <a class="card-link" href="https://github.com/ProLemon99/Epic-Block-Run">View on GitHub</a>
+            </article>
+            <article class="card">
+              <h4 class="card-title">Rooms</h4>
+              <p>Ripoff Doors from Roblox made with Python (lots of bugs but I'm not bothered to fix them)</p>
+              <a class="card-link" href="https://github.com/ProLemon99/Rooms">View on GitHub</a>
+            </article>
+            <article class="card">
+              <h4 class="card-title">TMDB Movie Database Explorer</h4>
+              <p>CLI app to explore the TMDB movie database with Python</p>
+              <a class="card-link" href="https://github.com/ProLemon99/TMDB-Movie-Database-Explorer">View on GitHub</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <h3>The Origins: Early to Mid-1800s</h3>
-            <p>
-                Many scholars credit Edgar Allan Poe as the father of detective fiction. His 1841 story 
-                <em>The Murders in the Rue Morgue</em> introduced C. Auguste Dupin, the first fictional detective 
-                to use logical reasoning and analysis, establishing the template for future sleuths. These early 
-                tales set the foundation for mystery-driven narratives where intellect solves the crime.
-            </p>
-
-            <h3>The Golden Age (1920s-1930s)</h3>
-            <p>
-                The Golden Age of crime fiction produced intricate “whodunit” mysteries, often featuring 
-                upper-class settings, clever puzzles, and a focus on fair-play clues. Authors like 
-                Agatha Christie, Dorothy L. Sayers, and G.K. Chesterton dominated this era. Christie's 
-                Poirot and Miss Marple became iconic, and the rules of detective fiction were formalized 
-                to ensure readers had a fair chance to solve the mystery.
-            </p>
-
-            <h3>Hard-Boiled and Noir (1930s-1950s)</h3>
-            <p>
-                In the United States, crime fiction took a darker turn. Crime became grittier, morally ambiguous, 
-                and grounded in urban life. Writers such as Dashiell Hammett and Raymond Chandler created 
-                tough private investigators who navigated corrupt systems, dangerous criminals, and their own 
-                personal flaws. This era prioritized atmosphere, cynicism, and realism over puzzle-solving.
-            </p>
-
-            <h3>Police Procedurals and the Modern Era (1950s-Present)</h3>
-            <p>
-                The rise of police-centered stories brought realism and detail into the genre. Authors like 
-                Ed McBain helped popularize the police procedural, which followed law enforcement teams step-by-step 
-                through an investigation. Modern crime fiction has continued to evolve, incorporating forensic science, 
-                psychological profiling, global settings, and hybrid styles that blend crime with thriller, horror, 
-                or true-crime influences.
-            </p>
-
-            <h3>Contemporary Crime Fiction</h3>
-            <p>
-                Today, crime fiction includes a wide range of voices and perspectives, including international 
-                crime fiction, feminist crime novels, and works focused on social issues. Scandinavian “Nordic Noir” 
-                has grown especially popular, known for bleak atmospheres and morally complex characters.
-            </p>
-
-            <img src="img/hd2.jpg" alt="Crime Fiction Image">
-        </section>
-
-        <!-- CORE ELEMENTS -->
-        <section id="core-elements" class="section">
-            <h2>Core Elements of Crime Fiction</h2>
-            <p>Although the genre has many variations, most crime fiction includes these major elements:</p>
-            <ul>
-                <li><strong>The Crime:</strong> The central act that drives the plot, often a murder, theft, or conspiracy.</li>
-                <li><strong>The Investigator:</strong> A detective, amateur sleuth, journalist, or ordinary individual who seeks the truth.</li>
-                <li><strong>Clues and Red Herrings:</strong> Information that helps or misleads both the reader and the investigator.</li>
-                <li><strong>Suspects and Motives:</strong> Characters who may have reasons to commit the crime.</li>
-                <li><strong>The Reveal:</strong> The final explanation of what happened, how, and why.</li>
-            </ul>
-
-            <img src="img/hd4.jpg" alt="Crime Fiction Image">
-        </section>
-
-        <!-- SUBGENRES -->
-        <section id="subgenres" class="section">
-            <h2>Subgenres of Crime Fiction</h2>
-            <p>Crime fiction is a broad genre, encompassing various subgenres including:</p>
-            <ul>
-                <li>Detective Fiction</li>
-                <li>Hard-Boiled Fiction</li>
-                <li>Legal Thrillers</li>
-                <li>Cozy Mysteries</li>
-                <li>Noir Fiction</li>
-                <li>Police Procedurals</li>
-                <li>Psychological Thrillers</li>
-                <li>True Crime-Inspired Fiction</li>
-            </ul>
-
-            <img src="img/hd5.jpg" alt="Crime Fiction Image">
-        </section>
-
-        <!-- DETECTIVE ARCHETYPES -->
-        <section id="archetypes" class="section">
-            <h2>Common Detective Archetypes</h2>
-            <p>Crime fiction often revolves around certain classic investigator types:</p>
-            <ul>
-                <li><strong>The Brilliant but Eccentric Detective</strong> (e.g., Sherlock Holmes)</li>
-                <li><strong>The Hard-Boiled Private Eye</strong> (e.g., Philip Marlowe)</li>
-                <li><strong>The Amateur Sleuth</strong> (e.g., Miss Marple)</li>
-                <li><strong>The Police Detective</strong> (e.g., modern procedurals)</li>
-                <li><strong>The Antihero Investigator</strong> (morally ambiguous characters)</li>
-            </ul>
-
-            <img src="img/hd6.jpg" alt="Crime Fiction Image">
-        </section>
-
-        <!-- CULTURAL IMPACT -->
-        <section id="impact" class="section">
-            <h2>The Cultural Impact of Crime Fiction</h2>
-            <p>
-                Crime fiction has shaped modern storytelling in books, television, film, podcasts, and even video games. 
-                Its influence can be seen in true-crime documentaries, police dramas, detective shows, and mystery-driven 
-                interactive media. The genre also reflects social anxieties, changing legal systems, and evolving ideas of justice.
-            </p>
-            <p>
-                Crime fiction remains one of the most popular genres worldwide because it combines suspense, 
-                problem-solving, emotional tension, and human psychology in a way that appeals to a wide audience.
-            </p>
-
-            <img src="img/hd7.jpg" alt="Crime Fiction Image">
-        </section>
-
-        <!-- FAMOUS AUTHORS -->
-        <section id="famous-authors" class="section">
-            <h2>Famous Crime Fiction Authors</h2>
-            <p>Some of the most iconic authors in crime fiction include:</p>
-            <ul>
-                <li>Agatha Christie</li>
-                <li>Arthur Conan Doyle</li>
-                <li>Dashiell Hammett</li>
-                <li>Raymond Chandler</li>
-                <li>James Ellroy</li>
-            </ul>
-
-            <img src="img/hd8.jpg" alt="Agatha Christie Image">
-        </section>
-
-        <!-- RECOMMENDATIONS -->
-        <section id="recommendations" class="section">
-            <h2>Recommended Crime Fiction Books</h2>
-            <p>Here are a few must-read crime fiction books:</p>
-            <ul>
-                <li><strong>The Murder of Roger Ackroyd</strong> by Agatha Christie</li>
-                <li><strong>The Hound of the Baskervilles</strong> by Arthur Conan Doyle</li>
-                <li><strong>The Big Sleep</strong> by Raymond Chandler</li>
-                <li><strong>L.A. Confidential</strong> by James Ellroy</li>
-                <li><strong>One of Us Is Lying</strong> by Karen M. McManus</li>
-            </ul>
-
-            <img src="img/hd9.jpg" alt="Crime Fiction Image">
-        </section>
-
+      <section id="contact" class="section">
+        <div class="container">
+          <h3 class="section-title">Contact</h3>
+          <div class="card contact">
+            <div class="links">
+              <a class="btn" href="https://github.com/ProLemon99">GitHub</a>
+              <a class="btn" href="https://www.youtube.com/@lemonisbored">YouTube</a>
+              <a class="btn" href="https://discordapp.com/users/945347075627974676">Discord</a>
+              <a class="btn" href="https://www.instagram.com/lemon694420/">Instagram</a>
+              <a class="btn" href="https://www.roblox.com/users/1690397485/profile">Roblox</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; Crime Fiction Website by Levin Shao. HTML & CSS 2025</p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Lemon</span>
+        <span>Made with HTML, CSS and JS</span>
+      </div>
     </footer>
 
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
