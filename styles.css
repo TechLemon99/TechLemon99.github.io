@@ -26,8 +26,8 @@ body {
 }
 
 #descimg img {
-    width: 270px;            
-    height: 270px;           
+    width: 300px;            
+    height: 300px;           
     border-radius: 50%;      
     object-fit: cover;       
     object-position: center; 
@@ -49,6 +49,7 @@ body {
   background: rgba(11,11,16,0.6);
   border-bottom: 1px solid var(--border);
 }
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -56,12 +57,15 @@ body {
   gap: 16px;
   padding: 16px 0;
 }
+
 .brand { display: flex; align-items: center; gap: 12px; }
+
 .avatar {
   width: 40px; height: 40px; border-radius: 12px;
   display: grid; place-items: center;
   background: linear-gradient(135deg, rgba(139,92,246,0.3), rgba(34,211,238,0.3));
 }
+
 .title { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: 0.2px; }
 .subtitle { margin: 0; font-size: 13px; color: var(--muted); }
 .nav { display: flex; align-items: center; gap: 14px; }
@@ -89,12 +93,14 @@ body {
   color: var(--fg); text-decoration: none;
   background: var(--card);
 }
+
 .btn.primary {
   border-color: transparent;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #0b0b10;
   font-weight: 700;
 }
+
 .btn[aria-disabled="true"] { opacity: 0.6; pointer-events: none; }
 
 .section { padding: 28px 0 40px; }
@@ -104,18 +110,25 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+  align-items: stretch;
 }
+
 @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .header-inner { flex-wrap: wrap; } }
 
 .card {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 16px;
 }
+
+#projects .card {min-height: 190px;}
+
 .card-title { margin: 0 0 6px; font-size: 16px; }
-.card-link { display: inline-block; margin-top: 10px; color: var(--accent-2); text-decoration: none; font-weight: 600; }
+.card-link { display: inline-block; margin-top: auto; color: var(--accent-2); text-decoration: none; font-weight: 600; }
 .card-link:hover { text-decoration: underline; }
 
 .contact .links { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -125,6 +138,7 @@ body {
   border-top: 1px solid var(--border);
   margin-top: 20px;
 }
+
 .footer-inner {
   display: flex;
   align-items: center;
